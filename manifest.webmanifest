@@ -1,0 +1,10 @@
+{
+  "name": "Meeting Timer",
+  "short_name": "MeetingTimer",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "会議とっとと終わらせろと文句言うタイマー",
+  "icons": [
+  ]
+}
