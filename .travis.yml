@@ -11,9 +11,12 @@ before_install:
   - chmod 600 meetingtimer_deploy_key
   - eval `ssh-agent -s`
   - ssh-add meetingtimer_deploy_key
-    - git config --global user.name "Travis-CI"
+  - git config --global user.name "Travis-CI"
   - git config --global user.email "travis-ci@example.com"
+  - npm install
+  - npm install -g parcel-bundler @vue/cli
+  - vue add vuetify 
 
 script:
-  - npm run build
+  - parcel build index.html
   - '[ "$TRAVIS_BRANCH" == master ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && bash ./deploy.sh'
