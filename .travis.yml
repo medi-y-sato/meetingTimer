@@ -17,5 +17,5 @@ before_install:
   - npm install -g parcel-bundler
 
 script:
-  - parcel build index.html --publicurl ./
+  - parcel build index.html --public-url ./
   - '[ "$TRAVIS_BRANCH" == master ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && bash ./deploy.sh'
