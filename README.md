@@ -1,3 +1,10 @@
+# 打ち合わせタイマー
+
+[![Build Status](https://travis-ci.org/medi-y-sato/meetingTimer.svg?branch=master)](https://travis-ci.org/medi-y-sato/meetingTimer)
+
+打ち合わせを5分前に終わらせろと震えるタイマー
+
+
 # 開発メモ
 
 ## 初期設定

@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - 'stable'
+sudo: false
+cache:
+  directories:
+    - node_modules
+
+before_install:
+  - openssl aes-256-cbc -K $encrypted_0975109d8020_key -iv $encrypted_0975109d8020_iv -in meetingtimer_deploy_key.enc -out meetingtimer_deploy_key -d
+  - chmod 600 meetingtimer_deploy_key
+  - eval `ssh-agent -s`
+  - ssh-add meetingtimer_deploy_key
+    - git config --global user.name "Travis-CI"
+  - git config --global user.email "travis-ci@example.com"
+
+script:
+  - npm run build
+  - '[ "$TRAVIS_BRANCH" == master ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && bash ./deploy.sh'
