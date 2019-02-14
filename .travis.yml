@@ -14,8 +14,7 @@ before_install:
   - git config --global user.name "Travis-CI"
   - git config --global user.email "travis-ci@example.com"
   - npm install
-  - npm install -g parcel-bundler @vue/cli
-  - vue add vuetify 
+  - npm install -g parcel-bundler
 
 script:
   - parcel build index.html
