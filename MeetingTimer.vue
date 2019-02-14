@@ -70,7 +70,6 @@ export default {
       return timerDate;
     },
     timeupAlert() {
-      alert("時間切れー");
       navigator.vibrate(1000);
       console.log("vib 1000")
       setTimeout(()=>{
