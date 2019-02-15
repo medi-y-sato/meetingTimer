@@ -3,8 +3,9 @@
     <v-navigation-drawer v-model="drawer" fixed app>
       <v-list subheader three-line dense>
 
-        <v-list-tile>
+        <v-list-tile @click="openUrl('https://github.com/medi-y-sato/meetingTimer')">
           <v-list-tile-content>
+            <v-icon>info</v-icon>
             <v-list-tile-title>Meeting Timer</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
@@ -65,6 +66,11 @@ export default {
   }),
   props: {
     source: String
+  },
+  methods:{
+    openUrl(url){
+      window.open(url,"_blank")
+    }
   }
 };
 </script>
