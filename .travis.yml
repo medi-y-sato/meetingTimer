@@ -13,8 +13,8 @@ before_install:
   - ssh-add meetingtimer_deploy_key
   - git config --global user.name "Travis-CI"
   - git config --global user.email "travis-ci@example.com"
-  - npm install
   - npm install -g parcel-bundler
+  - npm install
 
 script:
   - parcel build index.html --public-url ./
