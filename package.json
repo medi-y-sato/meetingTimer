@@ -15,7 +15,6 @@
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^2.5.2",
-    "parcel-plugin-sw-precache": "^1.0.4",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
     "typescript": "^3.3.3",
