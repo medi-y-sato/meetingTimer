@@ -15,13 +15,13 @@ $ vue add vuetify
 ```
 
 ```sh
-$ parcel index.html
+$ npm run serve
 ```
 
 ## ビルド
 
 ```sh
-$ parcel build index.html --public-url ./
+$ npm run build
 ```
 
 ### travisからの自動ビルド
