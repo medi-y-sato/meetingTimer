@@ -21,7 +21,7 @@ $ npm run serve
 ## ビルド
 
 ```sh
-$ npm run build
+$ parcel build index.html --public-url .
 ```
 
 ### travisからの自動ビルド

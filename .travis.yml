@@ -18,5 +18,5 @@ before_install:
   - npm install
 
 script:
-  - npm run build
+  - parcel build index.html --public-url .
   - '[ "$TRAVIS_BRANCH" == master ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && bash ./deploy.sh'
