@@ -18,7 +18,13 @@ $ vue add vuetify
 $ parcel index.html
 ```
 
-## 自動ビルド
+## ビルド
+
+```sh
+$ parcel build index.html --public-url ./
+```
+
+### travisからの自動ビルド
 
 `gh-pages` リポジトリに `./dist/` 内部のビルド結果を push することで実現
 https://medi-y-sato.github.io/meetingTimer/
